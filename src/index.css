@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-300;
+  }
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  /* Optimizaciones para móvil */
+  input,
+  button,
+  select,
+  textarea {
+    @apply text-base;
+    font-size: 16px; /* Evita zoom en iOS */
+  }
+
+  /* Mejora la experiencia táctil */
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
